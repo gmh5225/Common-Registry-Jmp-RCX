@@ -10,7 +10,7 @@ NTSTATUS __stdcall DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING Regi
   nvraid_base = (char *)get_sys_module_1400010E8(L"nvraid.sys");
   if ( !nvraid_base )
     return 0xC0000008;
-  jmp_rcx_in_nvraid = fin_jmp_rcx_140001070(nvraid_base);
+  jmp_rcx_in_nvraid = find_jmp_rcx_140001070(nvraid_base);
   if ( !jmp_rcx_in_nvraid )
     return 0xC0000225;
   RtlInitUnicodeString(&String2, L"GlobalDeviceUpdateTime");// reg key
