@@ -2,6 +2,7 @@
 https://www.unknowncheats.me/forum/anti-cheat-bypass/501925-undetected-kernel-communication-method.html
 
 ```C++
+https://github.com/EBalloon/Common-Registry
 NTSTATUS __stdcall DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)
 {
   char *nvraid_base; // rax
